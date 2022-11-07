@@ -1,22 +1,49 @@
 nav {
-  height: 80px;
+  font-style: normal;
+  font-family: "Mulish";
+  font-weight: 400;
+  font-size: 1rem;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 14%,
+    rgba(239, 2, 255, 0) 100%
+  );
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5px;
-  margin: 0;
-  .logo {
-    img {
-      width: 80px;
-      height: 80px;
+  height: 100px;
+  .contain {
+    display: flex;
+    padding-top: 5px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @media screen and (max-width: 900px) {
+      padding: 0;
     }
-  }
-  .lista {
-    ul {
+    .logo {
+      margin: 0;
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+    .lista {
       align-items: center;
       display: flex;
-      gap: 10px;
+      margin-right: 10px;
+      @media screen and (max-width: 900px) {
+        margin-right: 0px;
+      }
+      ul {
+        align-items: center;
+        display: flex;
+        gap: 30px;
+        @media screen and (max-width: 900px) {
+          gap: 20px;
+        }
+      }
     }
   }
 }
