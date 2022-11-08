@@ -42,8 +42,8 @@ function App() {
         className={styles.particles}
       />
       <div className={styles.todo}>
-        <Nav />
-        <Main />
+        <Nav className={styles.Nav} />
+        <Main className={styles.Main} />
       </div>
     </>
   );

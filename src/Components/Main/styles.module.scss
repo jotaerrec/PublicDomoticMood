@@ -36,11 +36,15 @@ $text-gray: rgb(212, 212, 212);
       @media screen and (max-width: 900px) {
         font-size: 3rem;
       }
+      b {
+        user-select: none;
+      }
     }
     .descript {
       margin-top: 2em;
     }
     .stroke {
+      user-select: none;
       margin-top: -60px;
       font-size: 4.5rem;
       line-height: 1;

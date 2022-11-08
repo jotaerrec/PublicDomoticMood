@@ -11,8 +11,10 @@ const CameraController = () => {
   camera.near = 0.1;
   useEffect(() => {
     const controls = new OrbitControls(camera, gl.domElement);
+    console.log(controls);
+    console.log(camera);
     controls.minDistance = 25;
-    controls.maxDistance = 35;
+    controls.maxDistance = 30;
     controls.enablePan = false;
     return () => {
       controls.dispose();
@@ -49,7 +51,9 @@ export const Main = () => {
         <Suspense fallback="loading...">
           <Canvas
             camera={{
-              position: [-24.911, 20.184, -17.733],
+              position: [
+                -13.973569089018332, 15.65734658519813, -15.348839201236556,
+              ],
               fov: 90,
               zoom: 1.5,
               near: 0.1,
@@ -70,10 +74,8 @@ export const Main = () => {
         </p>
         <h1 className={styles.stroke}>DomoticMood.</h1>
         <p className={styles.descript}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-          voluptas sequi, sint consectetur cupiditate adipisci dicta possimus
-          corporis voluptate nobis alias error temporibus iste eveniet,
-          nesciunt, veniam itaque facere aliquid.
+          Somos un servicio de domótica, buscamos el control y la seguridad de
+          tu hogar de manera totalmente remota. Nos adaptamos a tu comodidad.
         </p>
       </div>
     </div>
