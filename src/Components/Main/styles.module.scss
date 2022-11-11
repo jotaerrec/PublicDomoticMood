@@ -48,6 +48,9 @@ $text-gray: rgb(212, 212, 212);
       border-right: 0.15em solid #18bdec;
       animation: typing 4s steps(38) 1s 1 normal both,
         blink 1s steps(1) infinite;
+      @media screen and (max-width: 900px) {
+        font-size: 3rem;
+      }
     }
     @keyframes typing {
       from {
