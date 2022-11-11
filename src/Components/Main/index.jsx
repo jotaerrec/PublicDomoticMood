@@ -6,22 +6,32 @@ import { Canvas, useThree } from "react-three-fiber";
 import { Suspense, useEffect } from "react";
 
 const CameraController = () => {
+  const { width, height } = getWindowSize();
   const { camera, gl } = useThree();
   camera.fov = 90;
   camera.near = 0.1;
   useEffect(() => {
     const controls = new OrbitControls(camera, gl.domElement);
-    console.log(controls);
-    console.log(camera);
-    controls.minDistance = 25;
-    controls.maxDistance = 30;
+    if (width < 900) {
+      controls.minDistance = 30;
+      controls.maxDistance = 35;
+    } else {
+      controls.minDistance = 25;
+      controls.maxDistance = 30;
+    }
     controls.enablePan = false;
     return () => {
       controls.dispose();
     };
-  }, [camera, gl]);
+  }, [camera, gl, width]);
   return null;
 };
+
+function getWindowSize() {
+  const { innerWidth, innerHeight } = window;
+  return { innerWidth, innerHeight };
+}
+
 export const Main = () => {
   const scene = new Scene();
   const loader = new ObjectLoader();
@@ -69,9 +79,10 @@ export const Main = () => {
         </Suspense>
       </div>
       <div className={styles.containerText}>
-        <p className={styles.tittle}>
-          Somos <b>DomoticMood.</b>
-        </p>
+        <p className={styles.tittle}>Somos</p>
+        <h2>
+          <b>DomoticMood.</b>
+        </h2>
         <h1 className={styles.stroke}>DomoticMood.</h1>
         <p className={styles.descript}>
           Somos un servicio de domótica, buscamos el control y la seguridad de

@@ -16,7 +16,7 @@ $text-gray: rgb(212, 212, 212);
     height: 400px;
     width: 500px;
     @media screen and (max-width: 900px) {
-      max-width: 60%;
+      max-width: 100%;
     }
   }
   .containerText {
@@ -36,8 +36,30 @@ $text-gray: rgb(212, 212, 212);
       @media screen and (max-width: 900px) {
         font-size: 3rem;
       }
-      b {
-        user-select: none;
+    }
+    h2 {
+      font-weight: 500;
+      font-size: 4.5rem;
+      width: 0;
+      line-height: 1;
+      user-select: none;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 0.15em solid #18bdec;
+      animation: typing 4s steps(38) 1s 1 normal both,
+        blink 1s steps(1) infinite;
+    }
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+    @keyframes blink {
+      50% {
+        border-color: transparent;
       }
     }
     .descript {
