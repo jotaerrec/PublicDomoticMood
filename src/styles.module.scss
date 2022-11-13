@@ -5,21 +5,27 @@
 * {
   line-height: 1;
   user-select: text;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: auto;
-  margin-right: auto;
   color: aliceblue;
 }
 html body {
   padding-left: 0 !important;
+  overflow: visible !important;
   padding-right: 0 !important;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
   width: 100% !important;
   background-color: #040922;
-  overflow: hidden;
-  min-height: 100%;
   font-family: inherit;
   line-height: inherit;
+}
+body::-webkit-scrollbar {
+  width: 7px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #760fb3;
+  border-radius: 5px;
 }
 ul {
   list-style: none !important;
