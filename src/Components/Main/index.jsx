@@ -38,17 +38,11 @@ export const Main = () => {
   loader.load(
     `${process.env.PUBLIC_URL}/scene.json`,
     function (obj) {
-      // Add the loaded object to the scene
-      console.log("complete");
       scene.add(obj);
     },
 
     // onProgress callback
-    function (xhr) {
-      console.log(xhr.loaded);
-      console.log(xhr.total);
-      console.log((xhr.loaded / xhr.total) * 100 + "% loaded");
-    },
+    function (xhr) {},
 
     // onError callback
     function (err) {
