@@ -3,7 +3,12 @@ $text-gray: rgb(212, 212, 212);
   font-family: "Ubuntu Mono", monospace;
   display: flex;
   flex-direction: row;
+  min-height: 80vh;
   justify-content: space-around;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
   @media screen and (max-width: 900px) {
     flex-direction: column;
     align-items: center;
@@ -13,6 +18,10 @@ $text-gray: rgb(212, 212, 212);
   }
 
   .model {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
     height: 400px;
     width: 500px;
     @media screen and (max-width: 900px) {
@@ -20,6 +29,10 @@ $text-gray: rgb(212, 212, 212);
     }
   }
   .containerText {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
     font-size-adjust: unset;
     width: 500px;
 
@@ -27,9 +40,17 @@ $text-gray: rgb(212, 212, 212);
       max-width: 60%;
     }
     p {
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: auto;
+      margin-right: auto;
       color: $text-gray;
     }
     .tittle {
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: auto;
+      margin-right: auto;
       font-weight: 500;
       font-size: 4.5rem;
       line-height: 1;
@@ -37,7 +58,11 @@ $text-gray: rgb(212, 212, 212);
         font-size: 3rem;
       }
     }
-    h2 {
+    .domotic {
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: auto;
+      margin-right: auto;
       font-weight: 500;
       font-size: 4.5rem;
       width: 0;
@@ -69,6 +94,10 @@ $text-gray: rgb(212, 212, 212);
       margin-top: 2em;
     }
     .stroke {
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: auto;
+      margin-right: auto;
       user-select: none;
       margin-top: -60px;
       font-size: 4.5rem;

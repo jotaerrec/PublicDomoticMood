@@ -1,0 +1,131 @@
+$text-gray: rgb(212, 212, 212);
+.principalScreen {
+  margin-top: 7em;
+  font-family: "Ubuntu Mono", monospace;
+  display: flex;
+  gap: 10rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+  }
+
+  .model {
+    margin: initial;
+    img {
+      -webkit-animation: rotating 10s linear infinite;
+      -moz-animation: rotating 10s linear infinite;
+      -ms-animation: rotating 10s linear infinite;
+      -o-animation: rotating 10s linear infinite;
+      animation: rotating 10s linear infinite;
+      height: 200px;
+      width: 200px;
+      object-fit: contain;
+    }
+  }
+  @-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  .containerText {
+    margin: initial;
+    font-size-adjust: unset;
+    width: 500px;
+
+    @media screen and (max-width: 900px) {
+      max-width: 60%;
+    }
+    p {
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: auto;
+      margin-right: auto;
+      color: $text-gray;
+    }
+    .tittle {
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: 500;
+      font-size: 4.5rem;
+      line-height: 1;
+      @media screen and (max-width: 900px) {
+        font-size: 3rem;
+      }
+    }
+    h2 {
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: 400;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.324);
+      font-size: 2.5rem;
+      line-height: normal;
+      user-select: none;
+      overflow: hidden;
+      @media screen and (max-width: 900px) {
+        font-size: 3rem;
+      }
+    }
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+    @keyframes blink {
+      50% {
+        border-color: transparent;
+      }
+    }
+    .descript {
+      margin-top: 2em;
+    }
+    .stroke {
+      user-select: none;
+      margin-top: -60px;
+      font-size: 4.5rem;
+      line-height: 1;
+      -webkit-text-stroke: 0.008em #fff;
+      //-webkit-text-stroke: 1px #fff;
+      color: transparent;
+
+      @media screen and (max-width: 900px) {
+        font-size: 3rem;
+      }
+    }
+  }
+}

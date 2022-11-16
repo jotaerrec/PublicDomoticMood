@@ -74,10 +74,10 @@ export const Main = () => {
       </div>
       <div className={styles.containerText}>
         <p className={styles.tittle}>Somos</p>
-        <h2>
+        <h2 className={styles.domotic}>
           <b>DomoticMood.</b>
         </h2>
-        <h1 className={styles.stroke}>DomoticMood.</h1>
+        <h2 className={styles.stroke}>DomoticMood.</h2>
         <p className={styles.descript}>
           Somos un servicio de domótica, buscamos el control y la seguridad de
           tu hogar de manera totalmente remota. Nos adaptamos a tu comodidad.
