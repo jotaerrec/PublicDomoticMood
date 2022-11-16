@@ -1,0 +1,38 @@
+.container {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  font-family: "Nunito", sans-serif;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: left;
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  .esperamos {
+    text-align: left;
+    margin-bottom: 0;
+    color: #760fb3;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 1;
+    user-select: none;
+    @media screen and (max-width: 900px) {
+      font-size: 2rem;
+    }
+  }
+  .parrafo {
+    margin-top: 3px;
+    font-size: 1.2rem;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+
+    a {
+      cursor: pointer;
+      margin-left: 4px;
+      &:hover {
+        color: rgb(166, 56, 193);
+      }
+    }
+  }
+}

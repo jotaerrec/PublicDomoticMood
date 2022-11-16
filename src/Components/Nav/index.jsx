@@ -12,13 +12,13 @@ export const Nav = () => {
           <div className={styles.lista}>
             <ul>
               <li>
-                <a href="#about">Sobre Nosotros</a>
+                <a href="#about">Nosotros</a>
               </li>
               <li>
-                <a href="#product">Productos</a>
+                <a href="#features">Caracteristicas</a>
               </li>
               <li>
-                <a href="#ask">Preguntas Frecuentes</a>
+                <a href="#expo">Expotecnica</a>
               </li>
             </ul>
           </div>

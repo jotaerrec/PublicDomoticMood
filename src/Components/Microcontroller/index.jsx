@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 
 export const MicroController = () => {
   return (
-    <div className={styles.principalScreen}>
+    <div className={styles.principalScreen} data-aos="fade-bottom">
       <div className={styles.model}>
         <img src={process.env.PUBLIC_URL + "img/atmega.png"} alt="" />
       </div>

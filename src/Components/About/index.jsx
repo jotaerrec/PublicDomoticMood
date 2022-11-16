@@ -6,8 +6,9 @@ import Time from "./Smart.svg";
 
 export const About = () => {
   return (
-    <div className={styles.container}>
-      <div className={styles.card}>
+    <div className={styles.container} data-aos="fade-bottom" id="features">
+      <h1 className={styles.features}>CARACTERISTICAS</h1>
+      <div className={styles.card} data-aos="fade-up">
         <img src={Time} alt="" />
         <div className={styles.containerText}>
           <h2>Confort.</h2>
@@ -18,7 +19,7 @@ export const About = () => {
           </p>
         </div>
       </div>
-      <div className={styles.card}>
+      <div className={styles.card} data-aos="fade-up">
         <img src={innovation} alt="" />
         <div className={styles.containerText}>
           <h2>Accesibilidad.</h2>
@@ -30,15 +31,15 @@ export const About = () => {
           </p>
         </div>
       </div>
-      <div className={styles.card}>
+      <div className={styles.card} data-aos="fade-up">
         <img src={digital} alt="" />
         <div className={styles.containerText}>
           <h2>Innovar.</h2>
           <p>
             Este proyecto se basa en la Internet de las Cosas (IoT, Internet of
             Things) representa un nuevo ambiente de cosas u objetos unívocamente
-            identificables. Esto quiere decir que no buscamos solo conectar no
-            sólo computadoras y teléfonos inteligentes sino también otros
+            identificables. Esto quiere decir que no buscamos solo conectar
+            computadoras y teléfonos inteligentes sino también otros
             dispositivos de uso cotidiano.
           </p>
         </div>

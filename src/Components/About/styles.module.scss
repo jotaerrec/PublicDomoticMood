@@ -3,13 +3,24 @@
   margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
   font-family: "Nunito", sans-serif;
-  margin-top: 10rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 4rem;
+  gap: 2rem;
+  .features {
+    color: #760fb3;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 1;
+    user-select: none;
+    @media screen and (max-width: 900px) {
+      font-size: 2rem;
+    }
+  }
   .card {
     margin-top: auto;
     margin-bottom: auto;
@@ -21,13 +32,15 @@
     justify-content: space-around;
     align-items: stretch;
 
-    &:nth-child(2) {
+    &:nth-child(3) {
       flex-direction: row-reverse;
     }
     @media screen and (max-width: 900px) {
-      &:nth-child(2) {
+      &:nth-child(3) {
+        width: auto;
         flex-direction: column;
       }
+      width: auto;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -54,6 +67,7 @@
       text-align: center;
       @media screen and (max-width: 900px) {
         width: 80%;
+        margin-top: 1rem;
       }
       h2 {
         margin-top: auto;
@@ -61,8 +75,6 @@
         margin-left: auto;
         margin-right: auto;
         color: #760fb3;
-        margin-left: auto;
-        margin-right: auto;
         font-weight: 500;
         font-size: 5rem;
         line-height: 1;
